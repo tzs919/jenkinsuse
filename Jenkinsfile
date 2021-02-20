@@ -1,10 +1,10 @@
+Jenkinsfile (Declarative Pipeline)
 pipeline {
-    agent any
-
+    agent { docker 'maven:3.3.3' }
     stages {
-        stage('Hello') {
+        stage('build') {
             steps {
-                echo 'Hello World========taozs==========='
+                sh 'mvn --version'
             }
         }
     }
