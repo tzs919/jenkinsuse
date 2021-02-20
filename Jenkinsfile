@@ -1,10 +1,10 @@
-Jenkinsfile (Declarative Pipeline)
 pipeline {
     agent any
+
     stages {
-        stage('build') {
+        stage('Hello') {
             steps {
-                echo 'set========='
+                echo 'Hello World========taozs==========='
             }
         }
     }
